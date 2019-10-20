@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>bytesCTF</title>
+
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+  <meta charset="UTF-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="css/foundation.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/sky.css">
+</head>
+
+<body>
+
+  <div id="background-wrap">
+    <div class="x1">
+      <div class="cloud"></div>
+    </div>
+
+    <div class="x2">
+      <div class="cloud"></div>
+    </div>
+
+    <div class="x3">
+      <div class="cloud"></div>
+    </div>
+
+    <div class="x4">
+      <div class="cloud"></div>
+    </div>
+
+    <div class="x5">
+      <div class="cloud"></div>
+    </div>
+    <div class="background">
+
+    </div>
+  </div>
+
+
+
+  <div class="noHeight" data-sticky-container>
+    <div class="small-12 sticky" data-sticky-on="small" data-sticky data-options="marginTop: 0">
+      <div class="navbar title-bar" data-responsive-toggle="menu" data-hide-for="medium">
+        <button id="menuButton" class="menu-icon" type="button" data-toggle="menu"></button>
+      </div>
+    </div>
+  </div>
+
+  <div class="noHeight" data-sticky-container>
+    <div class="small-12 sticky" data-sticky data-options="marginTop: 0">
+      <div class="top-bar" id="menu">
+        <div id="quickMenu" class="top-bar-right">
+          <ul class="menu menu-hover-lines vertical medium-horizontal" data-dropdown-menu>
+            <li id="splashMenu" class="active"><a href="#home">Home</a></li>
+            <li id="introMenu"><a href="#intro">Intro</a></li>
+            <li id="sponsorsMenu"><a href="#spons">Sponsors</a></li>
+            <li id="scheduleMenu"><a href="#sched">Schedule</a></li>
+            <li id="qaMenu"><a href="#qa">Q&A</a></li>
+            <li id="contactMenu"><a href="#con">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="grid-container">
+    <div id="splash" class="grid-x grid-padding-x align-middle grid-margin-y section">
+      <img id="splashLogo" src="media/bytesCTF.svg" class="medium-6 medium-offset-3 cell center">
+      <div class="medium-8 medium-offset-2 center cell">
+        <h2 id="splashSubTitle">First Byte into Security</h2>
+        <p id="splashLocation">
+          November 15-16, 2019<br>
+          Stony Brook University<br>
+          Center of Excellence in Wireless & Information Technology
+        </p>
+      </div>
+      <div id="actionButton" class=" medium-4 medium-offset-4 cell center">
+        <a target="_blank" href="http://bit.ly/bytesctf2019">
+          Register
+          <span>
+            <i class="fas fa-chevron-right"></i>
+          </span>
+        </a>
+      </div>
+    </div>
+
+    <div id="intro" class="grid-x grid-padding-x align-middle grid-margin-y section">
+
+      <div class="grid-x grid-padding-x align-middle grid-margin-y medium-12 cover1">
+        <h2 id="AboutTitle" class="medium-12 title cell center">About</h2>
+
+        <p class=" medium-10 medium-offset-1 cell">
+          In today's world, data and technology are becoming a huge part of our lives. To learn how to keep our own websites, data, and personal information safe, we have to learn how malicious hackers break it. That’s what BytesCTF is here to do!
+          BytesCTF is Stony Brook Computing Society’s first Capture The Flag event. Spend 12 hours completing various cybersecurity challenges to find secret flags, and compete to catch em’ all. Our topics include binary exploitation, website
+          investigation, cryptography and much more. Have questions? Feel free to visit our website, bytesctf.org or email bytesctf@gmail.com.
+        </p>
+      </div>
+
+      <div class=" cover grid-x grid-padding-x align-middle grid-margin-y">
+        <h2 id="whyAboutTitle" class="medium-12 cell center">Why BytesCTF?</h2>
+
+        <div id="whyAbout" class="grid-x grid-padding-x align-middle grid-margin-y">
+
+          <div class=" medium-8 medium-offset-2 cell center">
+            <h3>Learning</h3>
+            <p>Take the first steps into Cyber Security and touch on aspects of security like: cryptography, steganography, binary analysis, reverse engineering, mobile security and others.</p>
+          </div>
+
+          <div class=" medium-4 medium-offset-1 cell center">
+            <h3>Sponsors</h3>
+            <p>Large companies and inspiring startups looking for talented students like you</p>
+          </div>
+
+          <div class=" medium-4 medium-offset-2 cell center">
+            <h3>Community</h3>
+            <p>Create bonds and have unforgettable memories with friends from all over</p>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+    <div id="sponsors" class="grid-x grid-padding-x align-middle grid-margin-y section cover1">
+
+      <h2 id="sponsorsCreated" class="title medium-12 cell center">Created By</h2>
+
+      <div class=" medium-10 medium-offset-1 cell center">
+        <img src="media/partners/sbcs.png">
+      </div>
+
+      <h2 id="sponsorsPowered" class="title medium-12 cell center">Powered By</h2>
+
+      <div class=" medium-8 medium-offset-2 cell center">
+        <img src="media/partners/cewit.png" class="">
+      </div>
+
+      <h2 id="sponsorsPartners" class="title medium-12 cell center">Partnered With</h2>
+      <div class=" medium-4 medium-offset-2 cell center">
+        <img src="media/partners/CEAS.svg" class="">
+      </div>
+      <div class="sponBox medium-3 medium-offset-1 cell center">
+        <img src="media/partners/CareerCenter.svg" class="">
+      </div>
+      <h2 id="sponsorsComing" class="medium-12 cell center">More Coming Soon</h2>
+    </div>
+
+    <div id="schedule" class="grid-x grid-padding-x align-middle grid-margin-y section cover">
+      <h2 id="scheduleTitle" class="title medium-8 medium-offset-2 cell center">Schedule</h2>
+      <div class="grid-x grid-padding-x grid-margin-y medium-6 cell">
+        <h2 class="title medium-12 cell center">Friday</h2>
+        <h3 class=" medium-10 medium-offset-1 cell"><span class="title">06:00pm</span> - Sign In</h3>
+        <h3 class=" medium-10 medium-offset-1 cell"><span class="title">07:00pm</span> - Kick Off</h3>
+        <h3 class=" medium-10 medium-offset-1 cell"><span class="title">07:30pm</span> - Dinner</h3>
+        <h3 class=" medium-10 medium-offset-1 cell"><span class="title">08:00pm</span> - Start Hacking</h3>
+        <h3 class=" medium-10 medium-offset-1 cell"><span class="title">08:30pm</span> - Team Building</h3>
+      </div>
+
+      <div class="grid-x grid-padding-x grid-margin-y medium-6 cell">
+        <h2 class="title medium-12 cell center">Saturday</h2>
+        <h3 class=" medium-10 medium-offset-1 cell"><span class="title">12:00am</span> - Snacks + Caffeine</h3>
+        <h3 class=" medium-10 medium-offset-1 cell"><span class="title">08:00am</span> - End Hacking</h3>
+        <h3 class=" medium-10 medium-offset-1 cell"><span class="title">08:00am</span> - Breakfast</h3>
+        <h3 class=" medium-10 medium-offset-1 cell"><span class="title">09:00am</span> - Closing</h3>
+      </div>
+
+    </div>
+
+    <div id="qa" class="grid-x grid-padding-x align-middle grid-margin-y section cover1">
+      <h2 id="qatitle" class="title medium-12 cell center">Q & A</h2>
+      <div class=" medium-6 large-4 cell center questions">
+        <h4 class="title">Do I need to know anything about Cybersecurity to attend?</h4>
+        <p>Not at all! We will be having a boot camp the weeks before BytesCTF to introduce you to everything you need to know. PS: We will also have some difficult flags for our more experienced hackers.</p>
+      </div>
+      <div class=" medium-6 large-4 cell center questions">
+        <h4 class="title">How much does it cost?</h4>
+        <p>BytesCTF is completely free! We will supply you with all the food + caffeine you need to succeed</p>
+      </div>
+      <div class=" medium-6 large-4 cell center questions">
+        <h4 class="title">What do I need to bring?</h4>
+        <p>Bring yourself, a photo ID, your signed waiver (if applicable), a change of clothes, toiletries, a sleeping bag/blanket (if you’re sleeping of course), your hacker setup (laptop, charger, headphones, tablet for designers), and a passion
+          to compete!</p>
+      </div>
+      <div class=" medium-6 large-4 cell center questions">
+        <h4 class="title">How many hackers per team?</h4>
+        <p>The maximum team size is 2; you can work with one other person or alone. It’s completely okay to make your team beforehand, either in person or over our BytesCTF Slack. Another option is joining us for our Team Building activity and meet
+          your partner right then and there! The times and location for that activity is on the Schedule.</p>
+      </div>
+      <div class=" medium-6 large-4 cell center questions">
+        <h4 class="title">What is Slack?</h4>
+        <p>Throughout the CTF, we will be using Slack as the main form of communication. Never used Slack before? <a href="https://www.youtube.com/watch?v=9RJZMSsH7-g">Here's a quick introduction!</a></p>
+      </div>
+      <div class=" medium-6 large-4 cell center questions">
+        <h4 class="title">What if I want to sleep?</h4>
+        <p>We will have a separate room for sleeping, so that everyone who wants to rest can do so in peace and quiet. However, please bring your own sleeping bags and whatever blankets you may need. The specific rooms and maps will be released
+          closer to BytesCTF!</p>
+      </div>
+    </div>
+
+    <div id="contact" class="grid-x grid-padding-x align-middle grid-margin-y section cover">
+      <h2 id="contactTitle" class="title medium-12 cell center">Check us out on</h2>
+      <div class=" medium-2 medium-offset-2 cell center">
+        <img src="media/socialMedia/facebook.svg" onclick="location.href = 'https://www.facebook.com/bytesctf/';">
+      </div>
+      <div class=" medium-2 cell center">
+        <img src="media/socialMedia/instagram.svg" onclick="location.href = 'https://www.instagram.com/sbucomputingsociety/';">
+      </div>
+      <div class=" medium-2 cell center">
+        <img src="media/socialMedia/twitter.svg" onclick="location.href = 'https://twitter.com/sbucomputing';">
+      </div>
+      <div class=" medium-2 cell center">
+        <img src="media/socialMedia/slack.svg" onclick="location.href = 'https://bytesctf.slack.com/';">
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="js/foundation.js"></script>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>

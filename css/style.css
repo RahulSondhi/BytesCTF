@@ -1,0 +1,271 @@
+/* Colors:
+#05386B
+#379683
+#5CDB95
+#8EE4AF
+#EDF5E1
+*/
+:root {
+  --main-header-color: #05386B;
+  --main-bg: #5CDB95;
+  --main-text-color: #EDF5E1;
+  --main-clear: rgba(0, 0, 0, 0);
+  --section-bg: rgba(55, 150, 131, 0.7);
+  --section1-bg: rgba(142, 228, 175, 0.7);
+}
+
+@media (max-width: 575.98px) {
+  html {
+    font-size: 55%;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  html {
+    font-size: 58%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  html {
+    font-size: 60%;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  html {
+    font-size: 62.5%;
+  }
+}
+
+@media (min-width: 1200px) {
+  html {
+    font-size: 62.5%;
+  }
+}
+
+@media (max-width: 991.98px) {
+  body {
+    margin-top: 65px;
+  }
+}
+
+/* General */
+html {
+  user-select: none;
+  -webkit-user-select: none;
+  text-decoration: none;
+  outline: none;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  color: var(--main-text-color);
+  background: var(--main-bg);
+  font-size: 1.8rem;
+  line-height: 1.5;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.center {
+  text-align: center !important;
+}
+
+.section {
+  margin-bottom: 3em;
+}
+
+.title {
+  color: var(--main-header-color);
+  text-shadow: 0.07em 0.07em rgba(142, 228, 175, 0.8);
+}
+
+.cover {
+  margin: 1em;
+  background: var(--section-bg);
+  color: var(--main-text-color);
+  border-radius: 1em;
+  padding: 1em;
+}
+
+.cover1 {
+  margin: 1em;
+  background: var(--section1-bg);
+  color: var(--main-header-color);
+  border-radius: 1em;
+  padding: 1em;
+}
+
+/* Navbar */
+.noHeight {
+  height: 0 !important;
+}
+
+.title-bar {
+  background-color: var(--main-header-color);
+  color: var(--main-text-color) !important;
+}
+
+.top-bar {
+  background-color: var(--main-header-color);
+  color: var(--main-text-color) !important;
+}
+
+.menu-icon {
+  margin: 0em 0.5em;
+  width: 2em;
+  height: 1.6em;
+}
+
+.menu-icon::after {
+  background: #cacaca;
+  height: 0.2em;
+  box-shadow: 0 0.6em 0 #cacaca, 0 1.2em 0 #cacaca;
+}
+
+.menu-icon:hover::after {
+  background: #fefefe;
+  height: 0.2em;
+  box-shadow: 0 0.6em 0 #fefefe, 0 1.2em 0 #fefefe;
+}
+
+.top-bar ul {
+  background-color: transparent;
+}
+
+.menu-hover-lines {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 1px;
+  transition: all 0.35s ease;
+}
+
+.menu-hover-lines li a {
+  padding: 0.75em 0.25em;
+  margin: 0em 0.25em;
+  position: relative;
+  margin-bottom: 0.2em;
+}
+
+.menu-hover-lines li:first-child a {
+  margin-left: 0;
+}
+
+.menu-hover-lines li.active>a {
+  background-color: transparent;
+}
+
+.menu-hover-lines a:before,
+.menu-hover-lines a::after {
+  height: 0.15em;
+  position: absolute;
+  content: '';
+  transition: all 0.35s ease;
+  background-color: white;
+  width: 0;
+}
+
+.menu-hover-lines a::before {
+  top: 0;
+  left: 0;
+}
+
+.menu-hover-lines a::after {
+  bottom: 0;
+  right: 0;
+}
+
+.menu a {
+  color: var(--main-text-color);
+}
+
+.menu-hover-lines a:hover,
+.menu-hover-lines li.active>a {
+  transition: all 0.35s ease;
+  color: rgba(255, 255, 255, 1);
+}
+
+.menu-hover-lines a:hover::before,
+.menu-hover-lines .active a::before,
+.menu-hover-lines a:hover::after,
+.menu-hover-lines .active a::after {
+  width: 100%;
+}
+
+/* Splash */
+#splashTitle {
+  font-size: 3em;
+}
+
+#actionButton {
+  background-color: rgba(5, 56, 107, 0.8);
+  padding: 1em;
+  border-radius: 1em;
+}
+
+#actionButton a {
+  color: var(--main-text-color);
+}
+
+#splashSubTitle {
+  font-size: 2em;
+}
+
+#splash {
+  margin-top: 6em;
+  padding-top: 2em;
+  font-size: 1.1em;
+}
+
+/* Intro */
+#whyAbout h3{
+  text-decoration: underline;
+  color: var(--main-header-color);
+}
+
+/* Sponsors */
+#sponsorsCreated {
+  font-size: 1.8em;
+}
+
+#sponsorsPowered {
+  font-size: 1.6em;
+  margin-top: 0.75em;
+}
+
+#sponsorsPartners {
+  font-size: 1.4em;
+  margin-top: 1em;
+}
+
+#sponsorsComing {
+  font-size: 1.8em;
+}
+
+.sponBox {
+  background-color: white;
+  border-radius: 1em;
+}
+
+/* QA */
+#qa h4{
+  text-decoration: underline;
+  font-weight:bold;
+}
+
+/* Contact */
+#contact div img {
+  width: 80%;
+  margin: auto;
+}
+
+#contact{
+  margin-bottom: 12em;
+}
