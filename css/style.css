@@ -52,8 +52,6 @@
 
 /* General */
 html {
-  user-select: none;
-  -webkit-user-select: none;
   text-decoration: none;
   outline: none;
   font-family: 'Roboto Condensed', sans-serif;
