@@ -73,3 +73,8 @@ function setSVGs(){
   $('.cloud').append('<object type="image/svg+xml" data="media/cloud.svg"></object>');
   $('.background').append('<object type="image/svg+xml" data="media/flag.svg"></object>');
 }
+
+function openInNewTab(url) {
+  var win = window.open(url, '_blank');
+  win.focus();
+}
