@@ -214,6 +214,30 @@ body {
 
 #splashSubTitle {
   font-size: 2em;
+-webkit-animation: blink 4s linear infinite;
+    -moz-animation: blink 4s linear infinite;
+    animation: blink 4s linear infinite;
+
+}
+
+/* Animations */
+
+@-moz-keyframes blink {  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+}
+
+@-webkit-keyframes blink {  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+}
+
+@keyframes blink {  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
 }
 
 #splash {
