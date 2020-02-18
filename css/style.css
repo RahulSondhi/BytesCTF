@@ -246,6 +246,30 @@ body {
   font-size: 1.1em;
 }
 
+/* Sign Up */
+#signUpTitle {
+  font-weight: bolder;
+  font-size: 60px;
+}
+
+#signUp {
+  color: var(--main-header-color);
+}
+
+#signUpDiv{
+    width:200px;
+    height:200px;
+    align-items: center;
+    justify-content: center;
+}
+
+#signUpButton{
+  text-align: center;
+  display: inline-block;
+  font-size: 20px;
+  justify-content: center;
+}
+
 /* Intro */
 #whyAbout h3{
   text-decoration: underline;
