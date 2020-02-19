@@ -249,7 +249,7 @@ body {
 /* Sign Up */
 #signUpTitle {
   font-weight: bolder;
-  font-size: 60px;
+  font-size: 50px;
 }
 
 #signUp {
@@ -293,6 +293,12 @@ body {
 
 #sponsorsComing {
   font-size: 1.8em;
+}
+
+#askForSponsors p {
+  color: white;
+  font-weight: bolder;
+  text-align: center;
 }
 
 .sponBox {
